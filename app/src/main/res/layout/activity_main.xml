@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reclen"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/rctimev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_below="@+id/textView1"
+        android:text="@string/rctime"
+        android:textSize="50sp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/rctimev"
+        android:ems="10"
+        android:hint="@string/reboot_time"
+        android:inputType="number" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/relytime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/reboot1"
+        android:layout_below="@+id/editText1"
+        android:ems="10"
+        android:hint="@string/reboot_rely"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/reboot2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/reboot1"
+        android:layout_alignBottom="@+id/reboot1"
+        android:layout_toRightOf="@+id/reboot1"
+        android:onClick="Btn2_Click" />
+
+    <Button
+        android:id="@+id/reboot1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_below="@+id/relytime"
+        android:onClick="Btn1_Click" />
+
+    <Button
+        android:id="@+id/reboot3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/reboot2"
+        android:layout_alignBottom="@+id/reboot2"
+        android:layout_toRightOf="@+id/reboot2"
+        android:onClick="Btn3_Click" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reboot1"
+        android:text="@string/state"
+        android:textColor="#CCCCFF"
+        android:textSize="80sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/myname"
+        android:textSize="30sp" />
+
+</RelativeLayout>
